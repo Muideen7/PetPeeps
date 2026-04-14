@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PetPeeps — Premium Pet Care Reimagined
 
-## Getting Started
+**PetPeeps** is a high-fidelity, modern landing page for a premier pet care platform. Designed with a focus on vibrant aesthetics, smooth interactions, and a professional-grade user experience, it serves as the digital storefront for a service that treats pets like family.
 
-First, run the development server:
+## 🐾 Project Overview
+
+PetPeeps is built to bridge the gap between busy pet owners and professional pet care services. The platform emphasizes ease of access, trust, and a playful yet professional brand identity.
+
+### Key Features
+- **Modern Hero Section**: High-impact editorial design with custom 2D vector illustrations and GSAP-powered entry animations.
+- **Interactive Services**: A beautifully tiled grid of premium services including Grooming, Nutrition, and Insurance.
+- **Dribbble-Inspired Testimonials**: A modern masonry-style review section with transparent asset blending and elegant hover states.
+- **Responsive Navigation**: A bespoke mobile-first navigation system with a solid-opaque side menu and localized toggle positioning.
+- **Catchy Booking Section**: A minimalist, high-conversion section featuring floating decorative particles and sleek typography.
+- **GSAP & Framer Motion**: Advanced animation system combining scroll-triggered kinetic layouts with micro-interactions.
+
+## 🛠 Tech Stack
+
+This project is built using the latest industry-standard tools for performance and scale:
+
+| Layer | Technology |
+| :--- | :--- |
+| **Framework** | [Next.js 15+](https://nextjs.org/) (App Router) |
+| **Styling** | [TailwindCSS v4](https://tailwindcss.com/) |
+| **Animations** | [Framer Motion](https://www.framer.com/motion/) & [GSAP](https://gsap.com/) |
+| **Icons** | [Lucide React](https://lucide.dev/) |
+| **Typography** | [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) |
+| **Language** | [TypeScript](https://www.typescriptlang.org/) (Strict Mode) |
+
+## 📁 Project Structure
+
+Following a strict **No `src` folder** architectural pattern:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+PetPeep/
+├── app/                  # Next.js App Router (Pages & Layouts)
+├── components/           # UI Component Library
+│   ├── layout/           # Shared Layout (Header, Footer)
+│   ├── ui/               # Atomic Shadcn-style primitives
+│   └── sections/         # Feature-scoped landing page sections
+├── lib/                  # Shared utilities and constants
+├── public/               # Static assets & 2D Vector Illustrations
+└── types/                # Global TypeScript definitions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To run the project locally:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repository**
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-## Learn More
+## 🎨 Design Philosophy
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **High-Contrast**: Utilizing a clean white base with "PetPeep Blue" (#1E75FF) and vibrant accent colors.
+- **Minimalist Grid**: A focus on large whitespace and structured information hierarchy.
+- **2D Vector Aesthetic**: All pet and character illustrations follow a consistent 2D sticker-style vector aesthetic for brand cohesion.
