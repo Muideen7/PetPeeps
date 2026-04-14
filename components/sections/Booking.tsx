@@ -61,7 +61,7 @@ export function Booking() {
         >
           <Link
             href="/book"
-            className="inline-flex bg-black text-white px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition-transform shadow-2xl shadow-black/20"
+            className="inline-flex bg-black text-white px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition-transform shadow-2xl shadow-black/20 cursor-pointer"
           >
             Book an appointment
           </Link>

@@ -47,7 +47,7 @@ export function Footer() {
         <div className="flex flex-col lg:flex-row justify-between gap-16 mb-16">
           {/* Left Column: Branding & Newsletter */}
           <div className="w-full lg:max-w-[450px]">
-            <Link href="/" className="text-[2.6rem] font-extrabold tracking-tight text-black mb-6 inline-block leading-none">
+            <Link href="/" className="text-[2.6rem] font-extrabold tracking-tight text-black mb-6 inline-block leading-none cursor-pointer">
               PetPeeps.
             </Link>
             <p className="text-gray-500 font-medium text-lg leading-relaxed mb-10">
@@ -62,7 +62,7 @@ export function Footer() {
                   placeholder="Enter your email address..."
                   className="w-full bg-white border border-gray-100 rounded-full py-5 px-8 outline-none focus:border-gray-300 transition-all font-medium text-gray-500 shadow-sm"
                 />
-                <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-black text-white p-4 rounded-full hover:scale-105 transition-transform shadow-lg">
+                <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-black text-white p-4 rounded-full hover:scale-105 transition-transform shadow-lg cursor-pointer">
                   <ArrowRight size={24} />
                 </button>
               </div>
@@ -105,7 +105,7 @@ export function Footer() {
                     )
                   },
                 ].map((social, i) => (
-                  <Link key={i} href="#" className="text-black hover:opacity-70 transition-opacity">
+                  <Link key={i} href="#" className="text-black hover:opacity-70 transition-opacity cursor-pointer">
                     <social.icon />
                   </Link>
                 ))}
@@ -121,7 +121,7 @@ export function Footer() {
                 <ul className="space-y-4">
                   {column.links.map((link) => (
                     <li key={link.name}>
-                      <Link href={link.href} className="text-gray-900/60 font-semibold hover:text-black transition-colors text-base whitespace-nowrap">
+                      <Link href={link.href} className="text-gray-900/60 font-semibold hover:text-black transition-colors text-base whitespace-nowrap cursor-pointer">
                         {link.name}
                       </Link>
                     </li>
@@ -140,8 +140,8 @@ export function Footer() {
             ©{year} PetPeeps. All rights reserved.
           </p>
           <div className="flex items-center gap-12">
-            <Link href="#" className="text-gray-900/80 font-bold text-base hover:text-black transition-colors">Terms and conditions</Link>
-            <Link href="#" className="text-gray-900/80 font-bold text-base hover:text-black transition-colors">Privacy Policy</Link>
+            <Link href="#" className="text-gray-900/80 font-bold text-base hover:text-black transition-colors cursor-pointer">Terms and conditions</Link>
+            <Link href="#" className="text-gray-900/80 font-bold text-base hover:text-black transition-colors cursor-pointer">Privacy Policy</Link>
           </div>
         </div>
       </div>

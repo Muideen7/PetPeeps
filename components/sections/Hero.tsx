@@ -67,7 +67,7 @@ export function Hero() {
           </p>
 
           <div className="hero-cta flex flex-wrap gap-4">
-            <button className="bg-black text-white pl-8 pr-2 py-2 rounded-full font-black flex items-center gap-6 hover:bg-gray-800 transition-all group active:scale-95 shadow-2xl shadow-black/10">
+            <button className="bg-black text-white pl-8 pr-2 py-2 rounded-full font-black flex items-center gap-6 hover:bg-gray-800 transition-all group active:scale-95 shadow-2xl shadow-black/10 cursor-pointer">
               <span className="text-base md:text-lg">Schedule now</span>
               <div className="bg-[#1E75FF] p-3.5 md:p-4 rounded-full transition-transform group-hover:rotate-12">
                 <PawPrint size={22} className="text-white fill-white" />

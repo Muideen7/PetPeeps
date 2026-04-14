@@ -77,7 +77,7 @@ export function Pricing() {
             <div className="flex items-center gap-4 bg-slate-50 p-1.5 rounded-full w-fit mb-12 shadow-inner border border-slate-100">
               <button
                 onClick={() => setBillingCycle("monthly")}
-                className={`px-8 py-3 rounded-full font-bold text-sm transition-all ${
+                className={`px-8 py-3 rounded-full font-bold text-sm transition-all cursor-pointer ${
                   billingCycle === "monthly" ? "bg-white text-black shadow-md" : "text-gray-500"
                 }`}
               >
@@ -86,7 +86,7 @@ export function Pricing() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => setBillingCycle("yearly")}
-                  className={`px-8 py-3 rounded-full font-bold text-sm transition-all ${
+                  className={`px-8 py-3 rounded-full font-bold text-sm transition-all cursor-pointer ${
                     billingCycle === "yearly" ? "bg-white text-black shadow-md" : "text-gray-500"
                   }`}
                 >
@@ -151,7 +151,7 @@ export function Pricing() {
                         <span className={`text-[10px] font-bold ${pkg.theme === 'dark' ? 'text-white/40' : 'text-gray-400'}`}>{pkg.billing}</span>
                     </div>
                   </div>
-                  <button className={`w-full py-4 rounded-full font-black text-base transition-all hover:scale-[1.02] active:scale-[0.98] ${
+                  <button className={`w-full py-4 rounded-full font-black text-base transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer ${
                     pkg.theme === 'dark' ? 'bg-[#1E75FF] text-white shadow-xl shadow-blue-500/30' : 'bg-black text-white'
                   }`}>
                     Get started

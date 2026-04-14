@@ -109,7 +109,7 @@ export function FAQ() {
               >
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full p-8 text-left flex justify-between items-center group"
+                  className="w-full p-8 text-left flex justify-between items-center group cursor-pointer"
                 >
                   <span className={`font-black text-xl pr-8 transition-colors ${
                     openIndex === index ? 'text-[#1E75FF]' : 'text-black'

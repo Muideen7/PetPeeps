@@ -73,7 +73,7 @@ export function Services() {
               From spa days to health checkups, we offer everything your pet needs to stay happy, healthy, and loved. All delivered by trained professionals who care like family.
             </p>
             
-            <button className="bg-black text-white px-10 py-5 rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-black/20 group">
+            <button className="bg-black text-white px-10 py-5 rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-black/20 group cursor-pointer">
               View all services
             </button>
           </motion.div>
@@ -106,7 +106,7 @@ export function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.6 }}
-              className="bg-white rounded-[2.5rem] md:rounded-[4rem] p-8 md:p-12 border border-gray-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_60px_-10px_rgba(30,117,255,0.15)] hover:border-blue-100 transition-all duration-500 group relative overflow-hidden flex flex-col min-h-[380px] md:min-h-[440px]"
+              className="bg-white rounded-[2.5rem] md:rounded-[4rem] p-8 md:p-12 border border-gray-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_60px_-10px_rgba(30,117,255,0.15)] hover:border-blue-100 transition-all duration-500 group relative overflow-hidden flex flex-col min-h-[380px] md:min-h-[440px] cursor-pointer"
             >
               <div className="flex justify-between items-start mb-6 md:mb-8">
                 <h3 className="text-2xl md:text-3xl lg:text-[2.2rem] font-[900] text-[#111] leading-[1.1] max-w-[150px] md:max-w-[180px]">
