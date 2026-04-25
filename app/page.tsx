@@ -14,7 +14,7 @@ export default function Home() {
     <div className="bg-white min-h-screen flex flex-col">
       <Header />
 
-      <main className="flex flex-col w-full relative">
+      <main className="flex flex-col w-full relative overflow-hidden">
         <Hero />
         <Stats />
         <Services />

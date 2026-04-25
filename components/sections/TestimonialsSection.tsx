@@ -102,7 +102,7 @@ export function TestimonialsSection() {
               <div className="w-16 h-16 rounded-3xl bg-white p-2 shadow-sm border border-gray-100 overflow-hidden">
                 <div className="relative w-full h-full bg-[#FF8A00]/10 rounded-2xl overflow-hidden">
                   <Image
-                    src="/playful_dog.png"
+                    src="/testimonial_box_pet.png"
                     alt="Avatar"
                     fill
                     className="object-contain"

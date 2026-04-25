@@ -11,8 +11,11 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'PetPeeps | Professional At-Home Pet Care',
+  title: 'PetPeeps',
   description: 'Reliable and professional at-home pet care services. Grooming, wellness, and more for your furry family members.',
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
@@ -21,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${plusJakartaSans.variable} font-sans antialiased`} suppressHydrationWarning>
-      <body className="bg-white text-black overflow-x-hidden min-h-screen selection:bg-primary/20">
+    <html lang="en" className={`${plusJakartaSans.variable} font-sans antialiased overflow-x-hidden`} suppressHydrationWarning>
+      <body className="bg-white text-black overflow-x-hidden min-h-screen selection:bg-primary/20 flex flex-col">
         <ThemeProvider forcedTheme="light">
           {children}
         </ThemeProvider>

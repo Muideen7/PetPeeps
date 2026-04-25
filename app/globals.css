@@ -98,4 +98,8 @@
   .badge-playful {
     @apply bg-secondary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-2;
   }
+
+  .container {
+    @apply mx-auto max-w-[1440px] px-6 lg:px-12 w-full;
+  }
 }

@@ -6,6 +6,14 @@ import * as motion from "framer-motion/client";
 export function Features() {
   return (
     <section className="py-24 px-6 bg-white overflow-hidden relative" id="features">
+      {/* Background Pattern - Vertical Lines */}
+      <div className="absolute inset-0 z-0 opacity-[0.03]">
+        <div className="h-full w-full flex justify-between px-6 md:px-10">
+          {[...Array(12)].map((_, i) => (
+            <div key={i} className="w-[1px] h-full bg-black"></div>
+          ))}
+        </div>
+      </div>
       <div className="container mx-auto text-center relative z-10">
         {/* Badge */}
         <motion.div
@@ -28,21 +36,19 @@ export function Features() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-[2.8rem] md:text-5xl font-[900] text-black mb-12 leading-[1.05] tracking-tight max-w-5xl mx-auto"
+          className="text-[2.8rem] md:text-5xl font-[900] text-black mb-3 leading-[1.05] tracking-tight max-w-5xl mx-auto"
         >
           Because Home is <br className="hidden md:block" /> Where They&apos;re Happiest
         </motion.h2>
 
-        {/* Central Illustration Area */}
-        <div className="relative max-w-5xl mx-auto min-h-[500px] md:min-h-[700px] flex flex-col items-center">
-          
-          {/* Main Characters Scene */}
+        {/* Central Illustration Area - Larger Image */}
+        <div className="relative w-full max-w-[1100px] mx-auto aspect-[1.4/1] mb-6">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[900px] aspect-[1.5/1] z-20"
+            className="relative w-full h-full"
           >
             <Image
               src="/booking_characters.png"
@@ -53,46 +59,14 @@ export function Features() {
               unoptimized
             />
           </motion.div>
-
-          {/* Decorative Elements - Aligned with the scene */}
-          
-
-
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.5 }}
-            className="absolute left-[15%] bottom-[20%] w-24 h-24 hidden lg:block"
-          >
-            <Image src="/yellow_ball.png" alt="dog toy" fill className="object-contain" />
-          </motion.div>
-
-
-
-
-
-          {/* Content Over the Illustration (Bottom Part) */}
-          <div className="mt-auto pt-24 max-w-2xl relative z-40">
-            <p className="text-gray-500 font-medium text-lg md:text-xl mb-10 leading-relaxed mx-auto italic">
-              Some pets feel safest in their own space—and we&apos;re here to make sure they get the same love and attention without leaving home. Because nothing beats the feeling of being cared for where they feel most at ease.
-            </p>
-            <button className="bg-black text-white px-10 py-5 rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-xl shadow-black/10">
-              Booking appointment
-            </button>
-          </div>
         </div>
-      </div>
 
-      {/* Background Decorative Lines (as seen in screenshot) */}
-      <div className="absolute inset-0 z-0 opacity-[0.05] pointer-events-none">
-        <svg width="100%" height="100%" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M720 400L0 800" stroke="black" strokeWidth="1" />
-          <path d="M720 400L1440 800" stroke="black" strokeWidth="1" />
-          <path d="M720 400L720 800" stroke="black" strokeWidth="1" />
-          <path d="M720 400L360 800" stroke="black" strokeWidth="1" />
-          <path d="M720 400L1080 800" stroke="black" strokeWidth="1" />
-        </svg>
+        {/* Content Below the Illustration */}
+        <div className="max-w-2xl mx-auto mt-2">
+          <p className="text-gray-500 font-medium text-lg md:text-xl leading-relaxed mx-auto italic">
+            Some pets feel safest in their own space—and we&apos;re here to make sure they get the same love and attention without leaving home. Because nothing beats the feeling of being cared for where they feel most at ease.
+          </p>
+        </div>
       </div>
     </section>
   );

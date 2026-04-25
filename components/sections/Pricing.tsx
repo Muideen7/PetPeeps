@@ -96,24 +96,6 @@ export function Pricing() {
               </div>
             </div>
           </div>
-
-          {/* Top-right Illustration */}
-          <div className="absolute top-[-50px] right-[-100px] w-full max-w-[500px] h-[300px] hidden lg:block pointer-events-none">
-             <div className="relative w-full h-full">
-
-                
-                {/* Large Paw */}
-                <motion.div
-                  initial={{ x: 100, rotate: 10 }}
-                  whileInView={{ x: 0, rotate: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                  className="absolute right-0 top-1/2 -translate-y-1/2 w-64 h-64"
-                >
-                  <Image src="/large_paw.png" alt="paw" fill className="object-contain" priority unoptimized />
-                </motion.div>
-             </div>
-          </div>
         </div>
 
         {/* Pricing Cards Grid */}
@@ -178,74 +160,8 @@ export function Pricing() {
             </motion.div>
           ))}
         </div>
-
-        {/* Footer Illustration Section */}
-        <div className="relative w-full overflow-visible">
-
-          {/* Bottom Illustration Scene */}
-          <div className="relative w-full h-[400px] md:h-[500px]">
-             {/* Running Cat playing with yarn */}
-             <motion.div
-               initial={{ x: -100, opacity: 0 }}
-               whileInView={{ x: 0, opacity: 1 }}
-               viewport={{ once: true }}
-               transition={{ duration: 1 }}
-               className="absolute left-1/2 -translate-x-[75%] bottom-0 w-[400px] h-[300px] md:w-[600px] md:h-[450px] z-20"
-             >
-                <Image 
-                  src="/running_cat.png" 
-                  alt="calico cat" 
-                  fill 
-                  className="object-contain"
-                  quality={100}
-                  priority
-                  unoptimized
-                />
-             </motion.div>
-
-             {/* Playful Dog Sitting */}
-             <motion.div
-               initial={{ scale: 0, opacity: 0 }}
-               whileInView={{ scale: 1, opacity: 1 }}
-               viewport={{ once: true }}
-               transition={{ duration: 0.8, delay: 0.4 }}
-               className="absolute left-[60%] bottom-0 w-48 h-48 md:w-64 md:h-64 z-10"
-             >
-                <Image 
-                  src="/sitting_dog.png" 
-                  alt="sitting dog" 
-                  fill 
-                  className="object-contain"
-                  quality={100}
-                  unoptimized
-                />
-             </motion.div>
-
-             {/* Cute Rabbit */}
-             <motion.div
-               initial={{ y: 20, opacity: 0 }}
-               whileInView={{ y: 0, opacity: 1 }}
-               viewport={{ once: true }}
-               transition={{ duration: 0.8, delay: 0.6 }}
-               className="absolute left-[50%] bottom-0 w-24 h-24 md:w-32 md:h-32 z-30"
-             >
-                <Image 
-                  src="/rabbit.png" 
-                  alt="rabbit" 
-                  fill 
-                  className="object-contain"
-                  quality={100}
-                  unoptimized
-                />
-             </motion.div>
-
-
-
-
-          </div>
-        </div>
       </div>
-      
+       
       {/* Background Decorative Lines */}
       <div className="absolute inset-x-0 bottom-0 h-[600px] z-0 opacity-[0.03] pointer-events-none">
         <svg width="100%" height="100%" viewBox="0 0 1440 600" fill="none" xmlns="http://www.w3.org/2000/svg">
